@@ -1,0 +1,6 @@
+
+
+запуск сервера FastAPI
+```
+uvicorn main:app --reload
+```

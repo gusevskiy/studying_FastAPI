@@ -12,9 +12,21 @@ pip install "uvicorn[standard]"
 pip install 'fastapi-users[sqlalchemy]'
 pip install sqlalchemy alembic psycopg2-binary
 pip install fastapi-cache2[redis]
+pip install celery
+pip install flower
 ```
 
 библиотеки
 https://github.com/long2ice/fastapi-cache
 
 https://github.com/fastapi-users/fastapi-users
+
+
+запуск задачи selery
+```
+celery -A tasks.tasks:celery worker --loglevel=INFO
+```
+мониторинг звдач selery   http://localhost:5555/
+```
+celery -A tasks.tasks:celery flower
+```

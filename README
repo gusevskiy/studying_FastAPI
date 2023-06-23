@@ -3,4 +3,18 @@
 запуск сервера FastAPI
 ```
 uvicorn main:app --reload
+alembic revision --autogenerate -m  "Initial"
 ```
+
+```
+pip install fastapi[all]
+pip install "uvicorn[standard]"
+pip install 'fastapi-users[sqlalchemy]'
+pip install sqlalchemy alembic psycopg2-binary
+pip install fastapi-cache2[redis]
+```
+
+библиотеки
+https://github.com/long2ice/fastapi-cache
+
+https://github.com/fastapi-users/fastapi-users

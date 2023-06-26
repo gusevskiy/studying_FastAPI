@@ -3,3 +3,7 @@ pythonpath = [
   ".", "src",
 ]
 asyncio_mode="auto"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"

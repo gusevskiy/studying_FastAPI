@@ -15,6 +15,7 @@ async def test_add_role():
         result = await session.execute(query)
         assert result.all() == [(1, 'admin', None)], "Роль не добавилась"
 
+
 def test_register():
     response = client.post("/auth/register", json={
         "email": "string",
